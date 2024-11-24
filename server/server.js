@@ -12,7 +12,7 @@ const PORT=3000;
 app.use(express.json()); 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/api/User', googleAuthRoutes);
+app.use('/', googleAuthRoutes);
 app.use('/api/User',UserRouter);
 
 
